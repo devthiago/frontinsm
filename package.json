@@ -10,7 +10,8 @@
     "watch": "npm run dev-server",
     "build": "npm run webpack",
     "start": "npm run test; npm run build; npm run server",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "publish": "git subtree push --prefix build origin gh-pages"
   },
   "repository": {
     "type": "git",
