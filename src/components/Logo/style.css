@@ -1,0 +1,11 @@
+.logoBanner {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .logoBanner {
+    width: 100%;
+  }
+}

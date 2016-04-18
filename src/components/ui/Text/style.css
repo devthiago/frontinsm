@@ -1,0 +1,18 @@
+.text {
+  line-height: 26px;
+  margin-bottom: 26px;
+  font-weight: 300;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.textBanner {
+  composes: text;
+  color: #fff;
+}
+
+.textSign {
+  composes: text;
+  display: inline;
+}

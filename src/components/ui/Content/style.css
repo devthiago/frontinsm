@@ -1,0 +1,31 @@
+.content {
+  padding: 90px 20px 40px;
+  text-align: center;
+}
+
+.contentOdd {
+  composes: content;
+  background-color: #f5f5f5;
+}
+
+.contentInternal {
+  max-width: 800px;
+  margin: auto;
+}
+
+.contentHeader {
+  composes: contentInternal;
+  margin-bottom: 40px;
+}
+
+.contenttHeaderDescription {
+  color: #aaa;
+}
+
+.contentHeaderDivider {
+  width: 100%;
+}
+
+.contentHeaderIcon {
+  fill: green;
+}

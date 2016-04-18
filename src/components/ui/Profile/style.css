@@ -1,0 +1,31 @@
+.profile {
+  width: 250px;
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.profilePhoto {
+  border-radius: 50%;
+  height: 200px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.profileDetails {
+  padding: 10px;
+}
+
+.profileName {
+  line-height: 100%;
+  margin: .8em 0;
+}
+
+.profileLinks {
+  display: inline-flex;
+  margin-bottom: 0.2em;
+}
+
+.profileLink {
+  margin: 0 5px;
+}

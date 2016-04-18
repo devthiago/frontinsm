@@ -1,0 +1,25 @@
+.button {
+  width: 40%;
+  margin: auto;
+  display: block;
+  padding: 20px;
+  border: 2px solid green;
+  color: green;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.button:hover {
+  background-color: green;
+  color: white;
+}
+
+.buttonBanner {
+  composes: button;
+  margin-top: 60px;
+}

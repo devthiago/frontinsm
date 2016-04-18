@@ -1,0 +1,18 @@
+.divider {
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px auto;
+}
+
+.dividerContentHeader {
+  composes: divider;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.dividerContentBannerHeader {
+  composes: dividerContentHeader;
+  background-color: #fff;
+}

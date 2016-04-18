@@ -1,0 +1,34 @@
+.title {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+  color: #444;
+  font-size: 2rem;
+  line-height: 100%;
+}
+
+.titleBanner {
+  composes: title;
+  color: #fff;
+}
+
+.dateTitle {
+  composes: title;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  margin-bottom: 3px;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .dateTitle {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+}

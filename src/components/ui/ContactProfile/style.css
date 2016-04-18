@@ -1,0 +1,13 @@
+.profile {
+  width: 150px;
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #666;
+  text-decoration: none;
+}
+
+.profileName {
+  line-height: 100%;
+  margin: .8em 0;
+}

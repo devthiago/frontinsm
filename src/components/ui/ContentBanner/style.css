@@ -1,0 +1,30 @@
+.contentBanner {
+  padding: 90px 20px 40px;
+  text-align: center;
+  background-color: #666;
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: #fff;
+}
+
+.contentBannerInternal {
+  max-width: 800px;
+  margin: auto;
+}
+
+.contentBannerHeader {
+  composes: contentBannerInternal;
+  margin-bottom: 40px;
+}
+
+.contentBannerHeaderDescription {
+  color: #dfdfdf;
+}
+
+.contentBannerHeaderDivider {
+  width: 100%;
+}
+
+.contentBannerHeaderIcon {
+  fill: #99FF00;
+}
