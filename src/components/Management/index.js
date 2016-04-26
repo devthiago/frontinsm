@@ -8,7 +8,7 @@ export default class Management extends BaseComponent {
         {
           photo: "https://avatars0.githubusercontent.com/u/5190217?v=3&s=460",
           name: "Thiago Alves",
-          twitter: "https,://twitter.com/taltk9",
+          twitter: "https://twitter.com/taltk9",
           github: "https://github.com/taltk9",
           linkedin: "https://br.linkedin.com/in/thiagoalvesluiz"
         },
