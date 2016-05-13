@@ -1,17 +1,23 @@
 {
   "name": "frontinsm",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "description": "Maior evento focado em FrontEnd do interior do estado do Rio Grande do Sul - Brasil",
+  "config": {
+    "build_path": "build",
+    "server_port": "5022",
+    "version_message": "Built Front-in SM version"
+  },
   "scripts": {
     "webpack": "./node_modules/webpack/bin/webpack.js -p",
-    "server": "./node_modules/http-server/bin/http-server -p 3000 ./build",
+    "server": "./node_modules/http-server/bin/http-server -p $npm_package_config_server_port ./build",
     "dev-server": "./node_modules/webpack/bin/webpack.js -w -d",
-    "test": "babel-node jasmine-babel.js",
     "watch": "npm run dev-server",
     "build": "npm run webpack",
-    "start": "npm run test; npm run build; npm run server",
-    "lint": "eslint src",
-    "publish": "git subtree push --prefix build origin gh-pages"
+    "version:patch": "npm version patch -m \"$npm_package_config_version_message %s\"",
+    "version:commit": "git add -A .; git commit -m \"$npm_package_config_version_message $npm_package_version\"",
+    "push:git": "git push --tags origin HEAD:master",
+    "push:gh-pages": "git subtree push --prefix build origin gh-pages",
+    "publish": "npm run build; npm run version:patch; npm run version:commit; npm run push:git; npm run push:gh-pages"
   },
   "repository": {
     "type": "git",
