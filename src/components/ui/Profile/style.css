@@ -29,3 +29,9 @@
 .profileLink {
   margin: 0 5px;
 }
+
+.profileCompany {
+  color: green;
+  font-size: .8rem;
+  margin-bottom: 10px;
+}

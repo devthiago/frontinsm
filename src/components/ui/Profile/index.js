@@ -74,6 +74,13 @@ export default class Profile extends BaseComponent {
     return links;
   }
 
+  getProfileCompany(company) {
+    if ( company !== '' ) {
+      return <div className={styles.profileCompany}>{company}</div>;
+    }
+    return null;
+  }
+
   getProfileDescription(description) {
     if ( description !== '' ) {
       return <Text>{description}</Text>;
@@ -89,6 +96,7 @@ export default class Profile extends BaseComponent {
         <img src={photo} alt={name} className={styles.profilePhoto} />
         <div className={styles.profileDetails}>
           <h3 className={styles.profileName}>{ name }</h3>
+          { this.getProfileCompany(company) }
           <div className={styles.profileLinks}>{ this.getSocialLinks(social) }</div>
           { this.getProfileDescription(description) }
         </div>
