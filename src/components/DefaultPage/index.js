@@ -4,6 +4,7 @@ import favicon from './favicon.ico';
 import Header from 'Header';
 import About from 'About';
 import Tickets from 'Tickets';
+import Speakers from 'Speakers';
 import Local from 'Local';
 import Management from 'Management';
 import Contact from 'Contact';
@@ -18,6 +19,7 @@ export default class DefaultPage extends BaseComponent {
         <Header />
         <About />
         <Tickets />
+        <Speakers />
         <Local />
         <Management />
         <Contact />
