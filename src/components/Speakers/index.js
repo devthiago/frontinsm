@@ -15,7 +15,7 @@ export default class Speakers extends BaseComponent {
           github: "https://github.com/icaromh"
         },
         {
-          photo: "https://pbs.twimg.com/profile_images/725096513823739905/Tueou_Kc_400x400.jpg",
+          photo: "https://pbs.twimg.com/profile_images/733442318406156288/btqDkiXL_400x400.jpg",
           name: "Guto Foletto",
           company: "UFSM",
           description: "Web developer apaixonado por design e e​studante do Mestrado em Ciência da Computação na ​UFSM. É graduado em Sistemas para Internet com sanduíche em Interactive Media Design na University of East London",
@@ -34,7 +34,7 @@ export default class Speakers extends BaseComponent {
           photo: "https://avatars3.githubusercontent.com/u/532254?v=3&s=460",
           name: "Almir Filho",
           company: "Globo.com",
-          description: "Criador do blog Loop Infinito e do projeto Setup, é desenvolvedor web na Globo.com",
+          description: "Desenvolvedor web na Globo.com, co-criador do projeto Setup e do blog Loop Infinito. Mestre em Ciência da Computação com mais de 10 anos de experiência em web, é especialista em front-end e extremamente interessado em produtividade e café.",
           twitter: "https://twitter.com/almirfilho",
           github: "https://github.com/almirfilho"
         },
@@ -62,6 +62,15 @@ export default class Speakers extends BaseComponent {
           twitter: "https://twitter.com/jaydson",
           github: "https://github.com/jaydson",
           website: "http://jaydson.org/"
+        },
+        {
+          photo: "https://pbs.twimg.com/profile_images/737999836616773632/JfNqdQUT_400x400.jpg",
+          name: "Guilherme Serrano",
+          company: "Eu Compraria",
+          description: "Há 12 anos trabalhando com desenvolvimento web, é apaixonado por web livre e compartilhamento de conhecimentos. Graduado em desenho industrial e pós graduado em gestão empreendedora, é sócio Eu Compraria e da GS Solutions",
+          twitter: "https://twitter.com/gserrano",
+          facebook: "https://www.facebook.com/masqueloucura",
+          linkedin: "https://www.linkedin.com/in/gbserrano"
         }
       ],
       profiles = [];
