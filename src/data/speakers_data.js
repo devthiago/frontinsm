@@ -129,7 +129,7 @@ export const GuilhermeSerrano = createSpeaker("Guilherme Serrano", {
     linkedin: "https://www.linkedin.com/in/gbserrano"
   },
   talk: {
-    title: 'Em definição',
-    description: ''
+    title: 'Este título é um teste A/B',
+    description: 'Você sabe o que quer do seu usuário. Mas você sabe o que melhorar para atingir estes objetivos? Aprenda como construir uma interface "data-driven" e como implementar testes A/B relevantes em projetos web.'
   }
 });
