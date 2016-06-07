@@ -5,6 +5,7 @@ import Header from 'Header';
 import About from 'About';
 import Tickets from 'Tickets';
 import Speakers from 'Speakers';
+import Programming from 'Programming';
 import Local from 'Local';
 import Management from 'Management';
 import Contact from 'Contact';
@@ -20,6 +21,7 @@ export default class DefaultPage extends BaseComponent {
         <About />
         <Tickets />
         <Speakers />
+        <Programming />
         <Local />
         <Management />
         <Contact />

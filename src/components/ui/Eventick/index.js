@@ -10,15 +10,16 @@ export default class Eventick extends BaseComponent {
   }
 
   createUrl(evid) {
-    return "http://www.eventick.com.br/" + evid + "/embedded";
+    return "https://www.eventick.com.br/e/" + evid;
   }
 
   render() {
     return (
       <iframe
+        className={styles.embed}
         src={this.createUrl(this.props.evid)}
         frameBorder="0"
-        height="180px"
+        height="388px"
         width="100%"
         vspace="0"
         hspace="0"

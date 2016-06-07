@@ -87,7 +87,7 @@ export default class Speakers extends BaseComponent {
       id: 'speakers',
       title: 'Palestrantes',
       description: 'O pessoal que "manja das paradas"',
-      icon: 'comment'
+      icon: 'user'
     };
 
     return (

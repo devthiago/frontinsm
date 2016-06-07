@@ -42,9 +42,9 @@ var loaders = [
     context: path.join(__dirname, 'src'),
     resolve: {
       alias: {
-        helpers: './src/helpers',
+        helpers: './src/helpers'
       },
-      modulesDirectories: ['node_modules', './src/components']
+      modulesDirectories: ['node_modules', './src/components', './src/data']
     },
     entry: {
       index: './app/index.js'

@@ -65,6 +65,8 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "lodash": "^4.13.1",
+    "moment": "^2.13.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-evil-icons": "^0.4.0"
