@@ -28,10 +28,16 @@ export default class ContentBanner extends BaseComponent {
   }
 
   render() {
-    let {id, title, description, icon, children, image} = this.props;
+    let {id, title, description, icon, children, image, onClick, style} = this.props;
+    let sectionProps = {
+      id,
+      className: styles.contentBanner,
+      style: {...this.getBackgroundImage(image), ...style},
+      onClick
+    };
 
     return (
-      <section id={id} className={styles.contentBanner} style={this.getBackgroundImage(image)}>
+      <section {...sectionProps}>
         <header className={styles.contentBannerHeader}>
           <Title type="banner">{title}</Title>
           <p className={styles.contentBannerHeaderDescription}>{description}</p>

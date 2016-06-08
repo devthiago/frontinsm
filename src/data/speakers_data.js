@@ -86,8 +86,8 @@ export const MauricioKlein = createSpeaker("Mauricio Klein", {
     website: "http://mauricioklein.com/"
   },
   talk: {
-    title: 'Em definição',
-    description: ''
+    title: 'What Zombieland taught me about being a software developer?',
+    description: 'Zombieland nos deu dicas valiosas a respeito de como lidar com a situação de um apocalipse zumbi, desde como sobreviver até como tocar a vida, mas podemos tirar muitos outros aprendizados a cerca da situação. Nessa talk irei provar que zumbis e softwares não são assim tão diferentes, e que as mesmas regras aplicadas ao primeiro são válidas ao segundo.'
   }
 });
 

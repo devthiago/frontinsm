@@ -17,14 +17,14 @@ export default class Programming extends BaseComponent {
     const programming = [
       checkIn,
       MauricioDick.talk,
-      AlmirFilho.talk,
-      coffeBreak1,
       MatheusAzzi.talk,
+      coffeBreak1,
       IcaroHeimig.talk,
-      lunch,
       GuilhermeSerrano.talk,
+      lunch,
       MauricioKlein.talk,
       JaydsonGomes.talk,
+      AlmirFilho.talk,
       coffeBreak2,
       GutoFoletto.talk,
       checkOut
@@ -34,7 +34,6 @@ export default class Programming extends BaseComponent {
     let next = beginning;
 
     return programming.map((props) => {
-      debugger;
       props.moment = next.format('HH:mm');
       next = next.add(props.duration, 'm');
 
