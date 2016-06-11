@@ -4,30 +4,49 @@ import Content from 'ui/Content';
 import Timeline from 'ui/Timeline';
 import TimelineBlock from 'ui/TimelineBlock';
 
-import { IcaroHeimig, GutoFoletto, MatheusAzzi, AlmirFilho, MauricioKlein, MauricioDick, JaydsonGomes, GuilhermeSerrano } from 'speakers_data';
+import SpeakersData from 'speakers_data';
 
 export default class Programming extends BaseComponent {
   getProgramming() {
-    var checkIn = { key: 'time-for-checkin', duration: 30, type: 'check', title: 'Credenciamento' };
-    var coffeBreak1 = { key: 'coffee-break1', duration: 30, type: 'interval', title: 'Coffee break' };
-    var lunch = { key: 'time-for-lunch', duration: 120, type: 'interval', title: 'Almoço' };
-    var coffeBreak2 = { key: 'coffee-break-2', duration: 15, type: 'interval', title: 'Coffee break' };
-    var checkOut = { key: 'finishing', duration: 30, type: 'check', title: 'Encerramento' };
+    let _checkIn = { key: 'time-for-checkin', duration: 30, type: 'check', title: 'Credenciamento' };
+    let _coffeBreak1 = { key: 'coffee-break1', duration: 30, type: 'interval', title: 'Coffee break' };
+    let _lunch = { key: 'time-for-lunch', duration: 120, type: 'interval', title: 'Almoço' };
+    let _coffeBreak2 = { key: 'coffee-break-2', duration: 15, type: 'interval', title: 'Coffee break' };
+    let _checkOut = { key: 'finishing', duration: 30, type: 'check', title: 'Encerramento' };
+
+    let {
+      IcaroHeimig,
+      GutoFoletto,
+      MatheusAzzi,
+      AlmirFilho,
+      MauricioKlein,
+      MauricioDick,
+      JaydsonGomes,
+      GuilhermeSerrano
+    } = SpeakersData.getTalkData();
 
     const programming = [
-      checkIn,
-      MauricioDick.talk,
-      MatheusAzzi.talk,
-      coffeBreak1,
-      IcaroHeimig.talk,
-      GuilhermeSerrano.talk,
-      lunch,
-      MauricioKlein.talk,
-      JaydsonGomes.talk,
-      AlmirFilho.talk,
-      coffeBreak2,
-      GutoFoletto.talk,
-      checkOut
+      _checkIn,
+
+      MauricioDick,
+      MatheusAzzi,
+
+      _coffeBreak1,
+
+      IcaroHeimig,
+      GuilhermeSerrano,
+
+      _lunch,
+
+      MauricioKlein,
+      JaydsonGomes,
+      AlmirFilho,
+
+      _coffeBreak2,
+
+      GutoFoletto,
+
+      _checkOut
     ];
 
     const beginning = moment('25/06/2016 08:00', 'DD/MM/YYYY hh:mm');
