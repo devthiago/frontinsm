@@ -10,7 +10,8 @@ export default class ContentBanner extends BaseComponent {
     title: '',
     description: '',
     icon: '',
-    image: 'assets'
+    image: 'assets',
+    hideHeader: false
   }
 
   static propTypes = {
@@ -18,26 +19,14 @@ export default class ContentBanner extends BaseComponent {
     title: React.PropTypes.string,
     description: React.PropTypes.string,
     icon: React.PropTypes.string,
-    image: React.PropTypes.string
+    image: React.PropTypes.string,
+    hideHeader: React.PropTypes.bool
   }
 
-  getBackgroundImage(src) {
-    return {
-      backgroundImage: 'url(assets/' + src + ')'
-    };
-  }
-
-  render() {
-    let {id, title, description, icon, children, image, onClick, style} = this.props;
-    let sectionProps = {
-      id,
-      className: styles.contentBanner,
-      style: {...this.getBackgroundImage(image), ...style},
-      onClick
-    };
-
-    return (
-      <section {...sectionProps}>
+  getHeader() {
+    let {title, description, icon, hideHeader} = this.props;
+    if ( !hideHeader ) {
+      return (
         <header className={styles.contentBannerHeader}>
           <Title type="banner">{title}</Title>
           <p className={styles.contentBannerHeaderDescription}>{description}</p>
@@ -47,6 +36,30 @@ export default class ContentBanner extends BaseComponent {
             <Divider type="contentBannerHeader" />
           </div>
         </header>
+      );
+    }
+    return null;
+  }
+
+  getBackgroundImage() {
+    let {image} = this.props;
+    let url = image.indexOf('http') >= 0 ? image : ('assets/' + image);
+    return {
+      backgroundImage: 'url(' + url + ')'
+    };
+  }
+
+  render() {
+    let {id, children} = this.props;
+    let sectionProps = {
+      id,
+      className: styles.contentBanner,
+      style: this.getBackgroundImage()
+    };
+
+    return (
+      <section {...sectionProps}>
+        { this.getHeader() }
         <div className={styles.contentBannerInternal}>
           {children}
         </div>

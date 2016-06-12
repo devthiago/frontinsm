@@ -8,6 +8,7 @@ import Speakers from 'Speakers';
 import Programming from 'Programming';
 import Local from 'Local';
 import Partnership from 'Partnership';
+import Sponsoring from 'Sponsoring';
 import Management from 'Management';
 import Contact from 'Contact';
 import Footer from 'Footer';
@@ -25,6 +26,7 @@ export default class DefaultPage extends BaseComponent {
         <Programming />
         <Local />
         <Partnership />
+        <Sponsoring />
         <Management />
         <Contact />
         <Footer />
