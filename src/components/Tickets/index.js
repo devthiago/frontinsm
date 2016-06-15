@@ -1,5 +1,6 @@
 import Content from 'ui/Content';
 import Eventick from 'ui/Eventick';
+import ConductCode from 'ui/ConductCode';
 
 export default class Tickets extends BaseComponent {
   render() {
@@ -14,6 +15,7 @@ export default class Tickets extends BaseComponent {
     return (
       <Content {...props}>
         <Eventick evid="ivv5j7mxn0zsjazz" />
+        <ConductCode />
       </Content>
     );
   }
