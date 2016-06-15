@@ -100,8 +100,8 @@ const speakers = {
       facebook: "https://www.facebook.com/mauricio.dick"
     },
     talk: {
-      title: 'Em definição',
-      description: ''
+      title: 'The user is not like me',
+      description: 'O desenvolvimento de sistemas interativos centrados no usuário tem se mostrado uma abordagem adequada. Com a filosofia “o usuário é quem melhor conhece”, o foco dos projetos passa a ser a compreensão dos desejos e necessidades do indivíduo. Porém, como podemos fazer isso? A partir das abordagens da experiência do usuário e do design thinking (processo de design para quem não é designer), veremos que é possível desenvolver sistemas interativos que considerem tanto o aspecto objetivo (realizar a tarefa) quanto subjetivo da experiência (prazer em realizá-la).'
     }
   }),
 
