@@ -21964,7 +21964,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  MauricioKlein: createSpeaker("Mauricio Klein", {
 	    bio: {
 	      photo: "http://mauricioklein.com/assets/images/avatar.jpg",
-	      company: "Codeminer 42",
+	      company: "Jura",
 	      description: "Desenvolvedor com mais de 7 anos de experiência no mercado, atuando em startups, pequenas, médias e grandes empresas. Experiência em Java, Ruby, Javascript, dentre outras. Atuou por um curto período como tester de performance. Atualmente trabalha na Codeminer42, no projeto Pagseguro Sandbox",
 	      github: "https://github.com/mauricioklein",
 	      linkedin: "https://br.linkedin.com/in/mauricioklein",
