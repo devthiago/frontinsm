@@ -19,6 +19,11 @@ const partners = {
   EuCompraria: createPartner("Eu Compraria", {
     logo: "https://eucompraria.com.br/media/img/logo/menino.png",
     website: "https://eucompraria.com.br/"
+  }),
+
+  Jetimob: createPartner("Jetimob", {
+    logo: "https://www.jetimob.com/imagens/frontinsm/marca-jetimob.png",
+    website: "https://www.jetimob.com/"
   })
 };
 
