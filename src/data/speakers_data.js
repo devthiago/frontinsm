@@ -116,7 +116,7 @@ const speakers = {
     },
     talk: {
       title: 'As 12 regras do cérebro aplicadas ao desenvolvimento de software',
-      description: ''
+      description: 'O livro “Brain Rules” mostra que não sabemos nada sobre o nosso cérebro. Após anos de estudo, o cientista e autor do livro elaborou 12 regras incríveis que explicam como o nosso cérebro funciona e como podemos melhorar nossa performance física e mental. Mas WTF Jaydson, eu quero saber é de programação. Pois é, mas o cérebro é uma peça importante na hora de programar? A palestra faz um merge e tenta encontrar uma simetria nas regras que podemos utilizar para aprimorar nossas habilidades como profissionais.'
     }
   }),
 

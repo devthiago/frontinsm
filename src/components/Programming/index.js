@@ -11,7 +11,7 @@ export default class Programming extends BaseComponent {
     let _checkIn = { key: 'time-for-checkin', duration: 30, type: 'check', title: 'Credenciamento' };
     let _coffeBreak1 = { key: 'coffee-break1', duration: 30, type: 'interval', title: 'Coffee break' };
     let _lunch = { key: 'time-for-lunch', duration: 120, type: 'interval', title: 'Almoço' };
-    let _coffeBreak2 = { key: 'coffee-break-2', duration: 15, type: 'interval', title: 'Coffee break' };
+    let _coffeBreak2 = { key: 'coffee-break-2', duration: 30, type: 'interval', title: 'Coffee break' };
     let _checkOut = { key: 'finishing', duration: 30, type: 'check', title: 'Encerramento' };
 
     let {
