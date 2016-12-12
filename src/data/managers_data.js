@@ -1,13 +1,14 @@
-import _ from 'lodash';
+import { merge, filter, isEmpty } from 'lodash';
 
 const createManager = (name, obj) => {
   let key = name.toLowerCase().replace(" ", "_");
   let mngObj = {
     key: key + "_manager",
+    code: key + "_manager",
     name
   };
 
-  return _.merge(mngObj, obj);
+  return merge(mngObj, obj);
 };
 
 const managers = {
@@ -54,11 +55,22 @@ export default class ManagersData {
   }
 
   static getDataArray() {
-    let data = [];
-    let oManagers = this.getData();
+    const data = [];
+    const oManagers = this.getData();
     for (let key in oManagers) {
       data.push(oManagers[key]);
     }
     return data;
+  }
+
+  static getDataBy(options = {}) {
+    const { year, ...search } = options;
+    const response = this.getDataArray();
+
+    if (response.length > 0 && !isEmpty(search)) {
+      return filter(response, search);
+    }
+
+    return response;
   }
 }

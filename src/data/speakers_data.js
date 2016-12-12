@@ -1,8 +1,11 @@
-import _ from 'lodash';
+import { merge, filter, isEmpty } from 'lodash';
 
 const createSpeaker = (name, obj) => {
   let key = name.toLowerCase().replace(" ", "_");
   let spkObj = {
+    key: `${key}_sepaker`,
+    code: `${key}_sepaker`,
+    name,
     bio: {
       key: key + "_bio",
       name
@@ -16,7 +19,7 @@ const createSpeaker = (name, obj) => {
     }
   };
 
-  return _.merge(spkObj, obj);
+  return merge(spkObj, obj);
 };
 
 const speakers = {
@@ -139,6 +142,26 @@ const speakers = {
 export default class SpeakersData {
   static getData() {
     return speakers;
+  }
+
+  static getDataArray() {
+    const data = [];
+    const oSpeakers = this.getData();
+    for (let key in oSpeakers) {
+      data.push(oSpeakers[key]);
+    }
+    return data;
+  }
+
+  static getDataBy(options = {}) {
+    const { year, ...search } = options;
+    const response = this.getDataArray();
+
+    if (response.length > 0 && !isEmpty(search)) {
+      return filter(response, search);
+    }
+
+    return response;
   }
 
   static getBioData() {

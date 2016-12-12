@@ -1,12 +1,16 @@
 import styles from './style.css';
 
+import Link from '../Link';
+
 export default class ConductCode extends BaseComponent {
   render() {
     return (
       <div>
-        <a className={styles.link} href="http://pt-br.confcodeofconduct.com/" target="_blank">
-          Código de conduta do Evento
-        </a>
+        <Link
+          label="Código de conduta do Evento"
+          href="http://pt-br.confcodeofconduct.com/"
+          target="_blank"
+        />
       </div>
     );
   }

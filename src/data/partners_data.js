@@ -4,6 +4,7 @@ const createPartner = (name, obj) => {
   let key = name.toLowerCase().replace(" ", "_").replace(".", "_");
   let prtObj = {
     key: key + "_partner",
+    code: key + "_partner",
     name
   };
 

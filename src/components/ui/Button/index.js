@@ -30,12 +30,12 @@ export default class Button extends BaseComponent {
           { this.props.label }
         </a>
       );
-    } 
+    }
 
     return (
       <button type={this.props.action} className={this.getType(this.props.type)}>
         { this.props.label }
       </button>
-    );  
+    );
   }
 }

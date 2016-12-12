@@ -1,0 +1,13 @@
+.default {
+  font-weight: 300;
+  color: green;
+  text-decoration: underline;
+  font-size: 1.3rem;
+  padding: 30px 0;
+  display: block;
+}
+
+.default[disabled] {
+  color: #232;
+  text-decoration: none;
+}

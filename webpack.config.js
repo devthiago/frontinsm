@@ -35,6 +35,18 @@ var loaders = [
         var tmpl = handlebars.compile(fs.readFileSync('src/pages/index.html', 'utf8'));
         return tmpl(data);
       }
+    }),
+    notfound: new ReactToHtmlPlugin('../404.html', 'notfound', {
+      template: function(data) {
+        var tmpl = handlebars.compile(fs.readFileSync('src/pages/404.html', 'utf8'));
+        return tmpl(data);
+      }
+    }),
+    certified: new ReactToHtmlPlugin('../certified.html', 'certified', {
+      template: function(data) {
+        var tmpl = handlebars.compile(fs.readFileSync('src/pages/certified.html', 'utf8'));
+        return tmpl(data);
+      }
     })
   },
 
@@ -47,7 +59,9 @@ var loaders = [
       modulesDirectories: ['node_modules', './src/components', './src/data']
     },
     entry: {
-      index: './app/index.js'
+      index: './app/index.js',
+      notfound: './app/404.js',
+      certified: './app/certified.js'
     },
     output: {
       path: path.join(__dirname, 'build/assets'),
@@ -64,7 +78,9 @@ var loaders = [
       }),
       /*new webpack.HotModuleReplacementPlugin(),*/
       new ExtractTextPlugin('[name].css', { allChunks: true }),
-      pages.index
+      pages.index,
+      pages.notfound,
+      pages.certified
     ],
     module: {
       loaders: loaders

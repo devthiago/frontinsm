@@ -10,6 +10,7 @@ import Local from 'Local';
 import Partnership from 'Partnership';
 import Sponsoring from 'Sponsoring';
 import Management from 'Management';
+import CertifiedForm from 'CertifiedForm';
 import Contact from 'Contact';
 import Footer from 'Footer';
 
@@ -28,6 +29,7 @@ export default class DefaultPage extends BaseComponent {
         <Partnership />
         <Sponsoring />
         <Management />
+        <CertifiedForm />
         <Contact />
         <Footer />
       </PageRoot>

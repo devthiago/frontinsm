@@ -1,0 +1,47 @@
+.style__pageRoot___2ONsN {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+.style__defaultImage___OPlx6 {
+  width: 100%;
+}.style__button___r9glm {
+  width: 40%;
+  margin: auto;
+  display: block;
+  padding: 20px;
+  border: 2px solid green;
+  color: green;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 3px;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.style__button___r9glm:hover {
+  background-color: green;
+  color: white;
+}
+
+.style__buttonBanner___BiFua {
+  margin-top: 60px;
+}.style__container___3Y2tc {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #333;
+  padding-bottom: 40px;
+}
+
+.style__containerInner___2XCTE {
+  width: 45%;
+  margin: auto;
+  padding-top: 70px;
+}
+
+/*# sourceMappingURL=notfound.css.map*/
