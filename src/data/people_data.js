@@ -7,8 +7,8 @@ import SpeakersData from './speakers_data.js';
 export default class PeopleData {
   static getDataBy(options = {}) {
     const objs = [
-      // ManagersData,
-      // SpeakersData,
+      ManagersData,
+      SpeakersData,
       AttendeesData
     ];
 

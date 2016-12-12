@@ -1,10 +1,12 @@
-import { merge, filter, isEmpty } from 'lodash';
+import { merge, isEmpty } from 'lodash';
+import { findByNameOrCode } from '../helpers/filters';
 
 const createManager = (name, obj) => {
   let key = name.toLowerCase().replace(" ", "_");
   let mngObj = {
     key: key + "_manager",
     code: key + "_manager",
+    type: 'manager',
     name
   };
 
@@ -64,11 +66,11 @@ export default class ManagersData {
   }
 
   static getDataBy(options = {}) {
-    const { year, ...search } = options;
+    const { year, search } = options;
     const response = this.getDataArray();
 
     if (response.length > 0 && !isEmpty(search)) {
-      return filter(response, search);
+      return response.filter(findByNameOrCode(search));
     }
 
     return response;

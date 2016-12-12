@@ -9,8 +9,6 @@ export default class AttendeesData {
     const byYear = year || '2016';
     const response = attendees[byYear];
 
-    console.log(response);
-
     if (response.length > 0 && !isEmpty(search)) {
       return response.filter(findByNameOrCode(search));
     }

@@ -1,10 +1,12 @@
-import { merge, filter, isEmpty } from 'lodash';
+import { merge, isEmpty } from 'lodash';
+import { findByNameOrCode } from '../helpers/filters';
 
 const createSpeaker = (name, obj) => {
   let key = name.toLowerCase().replace(" ", "_");
   let spkObj = {
     key: `${key}_sepaker`,
     code: `${key}_sepaker`,
+    type: 'speaker',
     name,
     bio: {
       key: key + "_bio",
@@ -154,11 +156,11 @@ export default class SpeakersData {
   }
 
   static getDataBy(options = {}) {
-    const { year, ...search } = options;
+    const { year, search } = options;
     const response = this.getDataArray();
 
     if (response.length > 0 && !isEmpty(search)) {
-      return filter(response, search);
+      return response.filter(findByNameOrCode(search));
     }
 
     return response;

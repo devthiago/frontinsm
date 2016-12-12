@@ -41,6 +41,18 @@ export default class Certified extends BaseComponent {
     ctx.fillText(url, 204, 1610);
   }
 
+  drawTalkTitle(ctx, talkTitle) {
+    if (talkTitle !== null) {
+      ctx.font = '28pt Helvetica';
+      ctx.fillStyle = '#000';
+      ctx.fillText('Título da palestra:', 204, 1200);
+
+      ctx.font = '48pt Helvetica';
+      ctx.fillStyle = '#000';
+      ctx.fillText(talkTitle, 204, 1270);
+    }
+  }
+
   componentDidMount() {
     const { width, height } = this.imageProps;
     const { params: { search } } = this.props;
@@ -55,6 +67,22 @@ export default class Certified extends BaseComponent {
     }
     const person = data[0];
 
+    let personType = 'Participante';
+    let talkName = null;
+
+    switch (person.type) {
+      case 'manager':
+        personType = 'Organizador(a)';
+        break;
+      case 'speaker':
+        personType = 'Palestrante';
+        talkName = person.talk.title;
+        break;
+      default:
+        personType = 'Participante';
+        break;
+    }
+
     const canvas = this.canvas;
     canvas.width = width;
     canvas.height = height;
@@ -64,6 +92,7 @@ export default class Certified extends BaseComponent {
     const drawAttendeeType = this.drawAttendeeType;
     const drawAttendeeName = this.drawAttendeeName;
     const drawValidURL = this.drawValidURL;
+    const drawTalkTitle = this.drawTalkTitle;
 
     // draw image
     const img = new Image();
@@ -71,8 +100,9 @@ export default class Certified extends BaseComponent {
     img.onload = () => {
       ctx.drawImage(img, 0, 0, width, height);
 
-      drawAttendeeType(ctx, 'Participante');
+      drawAttendeeType(ctx, personType);
       drawAttendeeName(ctx, `${person.name},`);
+      drawTalkTitle(ctx, talkName);
       drawValidURL(ctx, window.location.href);
     };
 
