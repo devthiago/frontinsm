@@ -89,7 +89,7 @@ export default class Profile extends BaseComponent {
   }
 
   render() {
-    let {photo, name, description, company, ...social} = this.props;
+    let {photo, name, description, company, type, code, ...social} = this.props;
 
     return (
       <div className={styles.profile}>

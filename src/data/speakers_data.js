@@ -99,7 +99,7 @@ const speakers = {
 
   MauricioDick: createSpeaker("Mauricio Dick", {
     bio: {
-      photo: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p320x320/11038721_10152578428451315_1134532993199233267_n.jpg?oh=63a973a978ceb2b930d79cf37afce2be&oe=57E50A3C&__gda__=1473608260_9240e2a692c3e6aafc905df097442b75",
+      photo: "https://scontent-gru.xx.fbcdn.net/v/t1.0-1/c43.31.873.873/s320x320/13494991_10153477327541315_318738306498282207_n.jpg?oh=5481acff5822b3ae1afdbc029652e3b7&oe=58E5547E",
       company: "UFSC",
       description: "Doutorando do Programa de Pós-Graduação em Design da UFSC. Foco de estudo na área do design digital: design de publicações digitais, estudo da ergonomia, usabilidade, UX, design de interfaces, entre outros. É mestre em Hipermídia aplicada ao Design",
       facebook: "https://www.facebook.com/mauricio.dick"
@@ -112,7 +112,7 @@ const speakers = {
 
   JaydsonGomes: createSpeaker("Jaydson Gomes", {
     bio: {
-      photo: "https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/12670369_10208252912576288_425537566886470411_n.jpg?oh=052ed1d100c3981191b0af5e475d348f&oe=57B2161F",
+      photo: "https://jaydson.com/content/images/2016/10/jaydson-gomes-avatar-3.jpg",
       company: "Nasc",
       description: "Mais de 12 anos de experiência em desenvolvimento Web. É desenvolvedor de software especializado em JavaScript, linguagem que é uma de suas paixões. É sócio fundador da Nasc, é curador e idealizador da ​BrazilJS Conf, uma das maiores conferências do mundo sobre a linguagem JavaScript. É também criador do ​projeto JSRocks",
       twitter: "https://twitter.com/jaydson",
