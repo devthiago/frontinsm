@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: $container;
+
+  @media (min-width: $size-desktop) {
+    flex-direction: row;
+  }
+
+  &--stretch {
+    align-items: stretch;
+  }
+
+  &--centered {
+    justify-content: center;
+  }
+
+  &--small {
+    display: block;
+
+    @media (min-width: $size-desktop) {
+      width: 35%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "frontinsm",
+  "version": "1.0.0",
+  "repository": "",
+  "author": "Guto Foletto <gutofoletto@gmail.com>",
+  "scripts": {
+    "dev": "parcel src/templates/index.pug --no-cache",
+    "build": "parcel build src/templates/index.pug --no-cache"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "eslint": "^5.8.0",
+    "parcel-bundler": "^1.11.0",
+    "pug": "^2.0.3",
+    "sass": "^1.17.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "normalize-scss": "^7.0.1"
+  }
+}

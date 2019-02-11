@@ -1,0 +1,75 @@
+.column {
+  @media (min-width: $size-tablet) {
+    flex: 0 0 1;
+    margin-left: $gutter / 2;
+    margin-right: $gutter / 2;
+    width: calc(100% - #{$gutter});
+  }
+
+  @media (min-width: $size-desktop) {
+    &--10 {
+      flex: 0 0 calc(10% - #{$gutter});
+      width: calc(10% - #{$gutter});
+    }
+
+    &--20 {
+      flex: 0 0 calc(20% - #{$gutter});
+      width: calc(20% - #{$gutter});
+    }
+
+    &--25 {
+      flex: 0 0 calc(25% - #{$gutter});
+      width: calc(25% - #{$gutter});
+    }
+
+    &--30 {
+      flex: 0 0 calc(30% - #{$gutter});
+      width: calc(30% - #{$gutter});
+    }
+
+    &--33 {
+      flex: 0 0 calc(33% - #{$gutter});
+      width: calc(33% - #{$gutter});
+    }
+
+    &--40 {
+      flex: 0 0 calc(40% - #{$gutter});
+      width: calc(40% - #{$gutter});
+    }
+
+    &--50 {
+      flex: 0 0 calc(50% - #{$gutter});
+      width: calc(50% - #{$gutter});
+    }
+
+    &--60 {
+      flex: 0 0 calc(60% - #{$gutter});
+      width: calc(60% - #{$gutter});
+    }
+
+    &--67 {
+      flex: 0 0 calc(67% - #{$gutter});
+      width: calc(67% - #{$gutter});
+    }
+
+    &--70 {
+      flex: 0 0 calc(70% - #{$gutter});
+      width: calc(70% - #{$gutter});
+    }
+
+    &--80 {
+      flex: 0 0 calc(80% - #{$gutter});
+      width: calc(80% - #{$gutter});
+    }
+
+    &--90 {
+      flex: 0 0 calc(90% - #{$gutter});
+      width: calc(90% - #{$gutter});
+    }
+
+    &--100 {
+      flex: 0 0 calc(100% - #{$gutter});
+      width: calc(100% - #{$gutter});
+    }
+  }
+}

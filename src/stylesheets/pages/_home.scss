@@ -1,0 +1,58 @@
+.home {
+  &__banner {
+    align-items: center;
+    background-image: url("../images/home__banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.banner {
+  .container {
+    align-content: stretch;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    background-color: $color-primary;
+    padding: 2rem;
+    transform: skew(-15deg);
+    position: relative;
+
+    @media (min-width: $size-desktop) {
+      padding: 2rem 5rem;
+    }
+
+    &:after {
+      background-color: hsla(hue($color-primary), 100%, 30%, 1);
+      content: "";
+      height: 100%;
+      width: 8rem;
+      position: absolute;
+      top: 2rem;
+      right: -8.5rem;
+    }
+  }
+
+  &__logo {
+    background-color: $color-white;
+    margin-right: 1rem;
+    padding: 3.5rem 2rem;
+    transform: skew(-15deg);
+
+    img {
+      display: block;
+      transform: skew(15deg);
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    color: $color-white;
+    transform: skew(15deg);
+  }
+}

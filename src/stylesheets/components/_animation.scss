@@ -1,0 +1,78 @@
+@import "node_modules/aos/src/sass/aos.scss";
+$animation-ease: cubic-bezier(0.9, 0, 0.1, 1);
+
+[data-aos="flashIn"] {
+  opacity: 0;
+  transform: translateZ(0);
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: -1em;
+    right: 0;
+    bottom: 0;
+    background-color: currentColor;
+    content: "";
+    transform: translateZ(0) skew(-15deg) scaleX(0);
+  }
+
+  &.aos-animate {
+    animation-name: opacity;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: $animation-ease;
+
+    &:after {
+      animation-name: mask-title;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards;
+      animation-timing-function: $animation-ease;
+    }
+  }
+
+  @for $i from 1 through 60 {
+    body[data-aos-delay="#{$i * 50}"] &,
+    &[data-aos][data-aos-delay="#{$i * 50}"] {
+      animation-delay: #{$i * 50}ms;
+
+      &:after {
+        animation-delay: #{$i * 50}ms;
+      }
+    }
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    transform: translateX(-$aos-distance);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes mask-title {
+  0% {
+    transform-origin: left;
+    transform: translateZ(0) skew(-10deg) scaleX(0);
+  }
+
+  50% {
+    transform-origin: left;
+    transform: translateZ(0) skew(-10deg) scaleX(1);
+  }
+
+  51% {
+    transform-origin: right;
+    opacity: 1;
+  }
+
+  100% {
+    transform-origin: right;
+    transform: translateZ(0) skew(-10deg) scaleX(0);
+    opacity: 0.5;
+  }
+}
