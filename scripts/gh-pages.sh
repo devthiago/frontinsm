@@ -3,7 +3,12 @@
 CNAMEFILE="dist/CNAME";
 
 yarn run build;
-echo "frontinsm.com.br" > $CNAMEFILE ;
+if [ -e "$CNAMEFILE" ]
+then
+  echo "CNAME file has been already created";
+else
+  echo "frontinsm.com.br" > $CNAMEFILE ;
+fi
 mv .gitignore _.gitignore;
 git push origin :gh-pages;
 git add dist && git commit -m "Static site release";
