@@ -2,7 +2,7 @@
 
 CNAMEFILE="dist/CNAME";
 
-npm run build;
+yarn run build;
 if [ -e "$CNAMEFILE" ]
 then
   echo "CNAME file has been already created";
