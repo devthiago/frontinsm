@@ -1,4 +1,4 @@
-# Kopiloto
+# Front in Santa Maria
 
 ## Installing
 
@@ -14,9 +14,9 @@ after just let yarn fetch and install all dependencies.
 ## Development
 The `dev` comman will run a development server powered by parcel with auto compile and hot-reload.
 
-`$ yarn dev`
+`$ yarn run dev`
 
 ## Building
-The `build` command will put every compiled file in a `build` folder.
+The `build` command will put every compiled file in a `dist` folder.
 
-`$ yarn build`
+`$ yarn run build`
