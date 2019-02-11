@@ -9,11 +9,7 @@
   "scripts": {
     "dev": "parcel src/templates/index.pug --no-cache",
     "build": "parcel build src/templates/index.pug --no-cache",
-    "version:patch": "npm version patch -m \"$npm_package_config_version_message %s\"",
-    "version:commit": "git add -A .; git commit -m \"$npm_package_config_version_message $npm_package_version\"",
-    "push:git": "git push --tags origin HEAD:master",
-    "push:gh-pages": "git subtree push --prefix dist origin gh-pages",
-    "publish": "npm run build; npm run version:patch; npm run version:commit; npm run push:git; npm run push:gh-pages"
+    "publish": "bash ./scripts/gh-pages.sh"
   },
   "devDependencies": {
     "autoprefixer": "^9.3.1",
