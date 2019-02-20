@@ -31,7 +31,7 @@ h6 {
 }
 
 h1 {
-  font-size: calc($heading-1 * 0.8);
+  font-size: $heading-1 * 0.8;
 
   @media (min-width: $size-tablet) {
     font-size: $heading-1;
