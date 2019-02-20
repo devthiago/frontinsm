@@ -31,11 +31,19 @@ h6 {
 }
 
 h1 {
-  font-size: $heading-1;
+  font-size: calc($heading-1 * 0.8);
+
+  @media (min-width: $size-tablet) {
+    font-size: $heading-1;
+  }
 }
 
 h2 {
-  font-size: $heading-2;
+  font-size: $heading-2 * 0.8;
+
+  @media (min-width: $size-tablet) {
+    font-size: $heading-2;
+  }
 }
 
 h3 {
@@ -57,4 +65,12 @@ p {
 
 small {
   font-size: $font-size-small;
+}
+
+a:link {
+  color: $color-primary;
+
+  &:hover {
+    color: $color-white;
+  }
 }
