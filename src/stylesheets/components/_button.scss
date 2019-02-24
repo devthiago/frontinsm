@@ -1,0 +1,29 @@
+.button {
+  color: $color-white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+
+  &:after {
+    background-color: $color-primary;
+    content: "";
+    height: 100%;
+    transform: skewX(-15deg);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $color-primary;
+
+    &:after {
+      background-color: $color-white;
+    }
+  }
+}

@@ -67,8 +67,9 @@ small {
   font-size: $font-size-small;
 }
 
-a:link {
+a {
   color: $color-primary;
+  text-decoration: none;
 
   &:hover {
     color: $color-white;
