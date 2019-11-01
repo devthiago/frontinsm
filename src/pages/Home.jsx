@@ -8,7 +8,6 @@ import {
   Speakers,
   Sponsors,
   Staff,
-  Tickets,
 } from '../sections'
 
 import content from '../data/content'
@@ -24,7 +23,6 @@ const Home = () => (
     <About />
     <Features />
     <Speakers />
-    <Tickets />
     <Program />
     <Sponsors />
     <Faq />
